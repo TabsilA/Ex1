@@ -1,0 +1,27 @@
+ #!/bin/bash 
+
+while [ -z $note ]       
+do  
+read -p "Plz enter your score" -n 5  note 
+done
+  
+if [ $note -lt 0 ] ||  [ $note -gt 20 ] 
+then  
+echo "Error_404"
+elif  [ $note  -ge  16 ]  
+then 
+echo "Rak mezyane trés bien" 
+elif  [ $note  -ge 14 ] 
+then 
+echo "mezyane  rak jebti bien"
+elif  [ $note -ge 12 ]   
+then 
+echo "rak jebti assez bien" 
+elif  [ $note  -ge  10 ] 
+then 
+echo "rak moyen 7awel tjtahed"
+elif [ $note -lt  10 ]
+then  
+echo "redoublant(e)"  
+
+fi 
